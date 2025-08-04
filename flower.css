@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  background-color: #4caf50;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.app-container {
+  text-align: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* Quote card */
+.quote-box {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 2rem;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+body.dark .quote-box {
+  background-color: #1e1e1e;
+}
+
+.quote {
+  font-size: 1.8rem;
+  font-style: italic;
+  margin: 1rem 0;
+  color: #4caf50;
+  transition: color 0.5s;
+}
+
+.author {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #4caf50;
+  transition: color 0.5s;
+}
+
+/* Main button */
+.quote-button {
+  padding: 0.7rem 1.4rem;
+  font-size: 1.1rem;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  font-weight: 500;
+  margin: 0.5rem;
+}
+
+/* Other buttons */
+.secondary-button {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #eeeeee;
+  color: #222;
+  transition: background-color 0.3s ease;
+}
+
+.secondary-button:hover {
+  background-color: #dddddd;
+}
+
+body.dark .secondary-button {
+  background-color: #333;
+  color: #eee;
+}
+
+.fade-quote {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
